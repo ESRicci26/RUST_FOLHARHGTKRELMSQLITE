@@ -1,0 +1,18 @@
+[package]
+name = "FOLHARHGTKRELMSQLITE"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+gtk = "0.16.1"
+relm = "0.24.0"
+relm-derive = "0.24.0"
+rusqlite = "0.28.0"
+
+[profile.release]
+panic = "abort"
+
+[[bin]]
+name = "FOLHARHGTKRELMSQLITE"
+path = "src/main.rs"
+
